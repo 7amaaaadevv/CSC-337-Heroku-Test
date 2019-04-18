@@ -17,7 +17,7 @@
 		// default cmd
 		if(command.length < 1) command = default_query;
 
-		let url = "http://localhost:" + process.env.PORT + "?query=" + command;
+		let url = "http://csc-337-fall2019-heroku-test.herokuapp.com" + process.env.PORT + "?query=" + command;
 		
 		/*----------fetch-----------*/
 		fetch(url)
