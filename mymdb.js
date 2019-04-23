@@ -15,7 +15,8 @@
 	function queryDb () {
 		let command = document.getElementById('queryTxt').value;
 		// default cmd
-		if(command.length < 1) command = default_query;
+		command = default_query;
+		//if(command.length < 1) command = default_query;
 
 		let url = "http://csc-337-fall2019-heroku-test.herokuapp.com" + process.env.PORT + "?query=" + command;
 		
